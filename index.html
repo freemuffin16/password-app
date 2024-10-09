@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlock Your Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #task {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #password {
+      margin-top: 20px;
+      font-size: 24px;
+      color: red;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Complete the Task to Unlock Your Password</h1>
+  <div id="task">Solve this math problem: What is 12 + 28?</div>
+
+  <input type="text" id="answer" placeholder="Enter your answer here" />
+  <br><br>
+  <button onclick="checkAnswer()">Submit</button>
+
+  <div id="feedback"></div>
+  <div id="password">Your Password: <strong>abc123</strong></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
